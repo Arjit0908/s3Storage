@@ -1,0 +1,26 @@
+cloud:
+  aws:
+    credentials:
+      access-key: AKIA2FWKK7JKJVBTS63Z
+      secret-key: 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
+    region:
+      static: ap-south-1
+
+application:
+  bucket:
+    name: aws3storages
+
+#      @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 4MB
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+server:
+  port: 9090
